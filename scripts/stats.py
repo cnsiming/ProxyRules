@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-*
+# -*- coding: utf-8 -*-
 """
 stats.py — 统计各 .list 规则文件的数量（按规则类型分组）
 用法：在仓库根目录运行  python3 scripts/stats.py
