@@ -1,6 +1,6 @@
 # ============================================================
 # AI.list
-# 用途：AI 服务总分类（AI-General + OpenAI + Claude 的合集，自动去重）
+# 用途：AI 服务总分类（AI-General + OpenAI + Claude 的合集，已去重）
 # 格式：Quantumult X / Surge 通用
 # 用法二选一：
 #   方案 A：分别引用 OpenAI.list / Claude.list / AI-General.list（推荐，
@@ -11,11 +11,14 @@
 # ============================================================
 
 # ==================== 通用 AI ====================
-# --- Google Gemini ---
+# --- Google Gemini / AI Studio / NotebookLM ---
 DOMAIN,gemini.google.com
+DOMAIN,aistudio.google.com
+DOMAIN,notebooklm.google.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,gemini.googleusercontent.com
 
@@ -29,11 +32,17 @@ DOMAIN-SUFFIX,pplx.ai
 
 # --- Poe ---
 DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poecdn.net
 
-# --- GitHub Copilot ---
+# --- Copilot ---
 DOMAIN,copilot.microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,copilot.github.com
+DOMAIN-SUFFIX,bingapis.com
+
+# --- Character.AI ---
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,characterai.io
 
 # ==================== OpenAI ====================
 DOMAIN-SUFFIX,openai.com
@@ -42,7 +51,11 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaiusercontent.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaichatgpt.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,livekit.io
 DOMAIN-SUFFIX,livekit.cloud
@@ -52,8 +65,11 @@ DOMAIN-SUFFIX,arkose.ai
 # ==================== Claude ====================
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,anthropic.org
+DOMAIN-SUFFIX,anthropic.systems
+DOMAIN-SUFFIX,anthropicusercontent.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,statsigapi.net

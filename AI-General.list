@@ -1,15 +1,18 @@
 # ============================================================
 # AI-General.list
-# 用途：通用 AI 服务分流（Gemini / Grok / Perplexity / Poe / Copilot 等）
+# 用途：通用 AI 服务分流（Gemini / Grok / Perplexity / Poe / Copilot / Character.AI 等）
 # 格式：Quantumult X / Surge 通用（DOMAIN-SUFFIX / DOMAIN）
 # 策略建议：走通用 AI 节点
 # ============================================================
 
-# ===== Google Gemini =====
+# ===== Google Gemini / AI Studio / NotebookLM =====
 DOMAIN,gemini.google.com
+DOMAIN,aistudio.google.com
+DOMAIN,notebooklm.google.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,gemini.googleusercontent.com
 
@@ -23,11 +26,18 @@ DOMAIN-SUFFIX,pplx.ai
 
 # ===== Poe（Quora 聚合平台） =====
 DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poecdn.net
 
-# ===== GitHub Copilot =====
+# ===== GitHub Copilot / Microsoft Copilot =====
 DOMAIN,copilot.microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,copilot.github.com
+# 注意：bingapis.com 为 Bing 生态共用（覆盖面较大），仅在使用 Copilot 时需要
+DOMAIN-SUFFIX,bingapis.com
+
+# ===== Character.AI =====
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,characterai.io
 
 # ===== 预留扩展位（常用国内/其他 AI，按需取消注释） =====
 # DOMAIN-SUFFIX,deepseek.com

@@ -3,22 +3,30 @@
 # 用途：Anthropic / Claude / Statsig 相关域名分流
 # 格式：Quantumult X / Surge 通用（DOMAIN-SUFFIX / DOMAIN）
 # 策略建议：走 Claude 专属节点
-# 说明：Statsig 是 Claude 前端 A/B 实验与功能开关服务，不放行
-#       会导致界面异常 / 一直加载，故归入本列表。
-#       （Statsig 同时被 ChatGPT 使用，本仓库已在 AI.list 中去重，
-#         多列表同时引用时命中规则以先引用者为准。）
+# 说明：
+#   - Statsig 是 Claude 前端 A/B 实验与功能开关服务，不放行会导致
+#     界面异常 / 一直加载；ChatGPT 也用它，统一在此维护，
+#     多列表同时引用时命中以先引用者为准。
+#   - api.anthropic.com / console.anthropic.com / downloads.claude.ai 等
+#     具体主机已被上方 DOMAIN-SUFFIX 规则覆盖，无需单独列出。
 # ============================================================
 
 # ===== Anthropic / Claude 核心域名 =====
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,anthropic.org
+DOMAIN-SUFFIX,anthropic.systems
+DOMAIN-SUFFIX,anthropicusercontent.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudeusercontent.com
 
 # ===== Statsig（功能开关 / 实验平台，Claude 前端依赖） =====
 DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,statsigapi.net
+
+# ===== 可选：遥测（sentry.io 为多家共用，不建议整域分流，可 REJECT） =====
+# DOMAIN-SUFFIX,sentry.io
 
 # ===== 可选：客服插件 Intercom（Claude 帮助中心用，不需要可注释） =====
 # DOMAIN-SUFFIX,intercom.io

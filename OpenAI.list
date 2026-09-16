@@ -1,7 +1,7 @@
 # ============================================================
 # OpenAI.list
 # 用途：OpenAI / ChatGPT / LiveKit / Arkose / Azure 相关域名分流
-# 格式：Quantumult X / Surge 通用（DOMAIN-SUFFIX / DOMAIN）
+# 格式：Quantumult X / Surge 通用（DOMAIN-SUFFIX / DOMAIN / DOMAIN-KEYWORD）
 # 策略建议：走 OpenAI 专属节点
 # 隐私声明：仅收集公开域名，不含任何节点 / 订阅地址 / 密码 / 证书
 # ============================================================
@@ -13,7 +13,14 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaiusercontent.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaichatgpt.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+
+# ===== 关键词兜底：匹配所有含 openai 的域名 =====
+# 提示：可能误伤其它含 openai 字样的域名，一般无害，按需保留
+DOMAIN-KEYWORD,openai
 
 # ===== 登录鉴权（ChatGPT 网页版登录跳转 Auth0，不放行会卡在登录页） =====
 DOMAIN-SUFFIX,auth0.com
@@ -33,5 +40,7 @@ DOMAIN-SUFFIX,arkose.ai
 # DOMAIN-SUFFIX,azure-api.net
 # DOMAIN-SUFFIX,microsoftonline.com
 
-# ===== 可选：遥测 / 崩溃上报（不需要可改为 REJECT，且 REJECT 规则要放在本文件最前） =====
+# ===== 可选：遥测 / 崩溃上报 =====
+# 注意：sentry.io 是多家共用的遥测平台，不建议整域分流到 AI 节点，
+#       不需要时可改为 REJECT（且 REJECT 规则要放在本文件最前）
 # DOMAIN-SUFFIX,sentry.io
