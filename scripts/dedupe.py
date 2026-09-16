@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-*
+# -*- coding: utf-8 -*-
 """
 dedupe.py — 检查各 .list 规则文件中的重复项
 用法：在仓库根目录运行  python3 scripts/dedupe.py
