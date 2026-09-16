@@ -1,0 +1,59 @@
+# ============================================================
+# AI.list
+# 用途：AI 服务总分类（AI-General + OpenAI + Claude 的合集，自动去重）
+# 格式：Quantumult X / Surge 通用
+# 用法二选一：
+#   方案 A：分别引用 OpenAI.list / Claude.list / AI-General.list（推荐，
+#            可给不同 AI 分配不同策略组）
+#   方案 B：只引用本 AI.list（适合简化配置，全部走同一个 AI 策略组）
+# 注意：不要既引用本合集又引用子列表，会重复命中（结果一致但浪费匹配）。
+# 本文件为合集快照，修改子列表后请运行 scripts/dedupe.py 校验去重。
+# ============================================================
+
+# ==================== 通用 AI ====================
+# --- Google Gemini ---
+DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,gemini.googleusercontent.com
+
+# --- Grok（xAI） ---
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+
+# --- Perplexity ---
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+
+# --- Poe ---
+DOMAIN-SUFFIX,poe.com
+
+# --- GitHub Copilot ---
+DOMAIN,copilot.microsoft.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,copilot.github.com
+
+# ==================== OpenAI ====================
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openai.org
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,livekit.io
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,arkose.ai
+
+# ==================== Claude ====================
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,anthropic.org
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
