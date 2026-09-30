@@ -1,3 +1,21 @@
+# ⚠️ 本仓库已归档合并
+
+**自 2026-10-01 起，本仓库的全部内容已合并至 [cnsiming/HappyRule](https://github.com/cnsiming/HappyRule) 的 `rules` 分支**，后续只在 HappyRule 维护。
+
+| 原文件 | 去向 |
+| --- | --- |
+| `OpenAI.list` | `Rules/AI/ChatGPT.list`（并补全 livekit/arkose 等） |
+| `Claude.list` | `Rules/AI/Claude.list` |
+| `AI-General.list` | 拆入 `Rules/AI/Google.list` 与 `Rules/AI/General.list` |
+| `AI.list`（合集） | 不再静态维护，用 `scripts/dedupe.py` 校验子列表 |
+| `scripts/` | 迁移至 HappyRule `scripts/` 并适配 |
+
+raw 订阅地址相应改为：
+`https://raw.githubusercontent.com/cnsiming/HappyRule/rules/Rules/AI/<名称>.list`
+
+---
+<br>
+
 # ProxyRules
 
 AI 服务分流规则集：把不同 AI 服务的流量分流到不同节点，互不影响。
